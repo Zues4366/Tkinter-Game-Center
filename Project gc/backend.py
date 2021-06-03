@@ -5,9 +5,10 @@ from tkinter.font import BOLD
 import random
 from typing import List
 
-play = True
+# Global values for the two script to work
 clicked = True
 count = 0
+# Clicking on the buttons pull up either "X" or "O"
 def click(b):
     global clicked, count
     if b["text"] == " " and clicked == True:
@@ -46,6 +47,7 @@ def spwindow():
     b8.grid(row=2, column=1)
     b9.grid(row=2, column=2)
 
+#CLicking on the options plays the game with player and a computer and a message box will pop up who won
 def rpsclick(but):
     global clicked   
     computer = random.choice(['R', 'S', 'P'])
