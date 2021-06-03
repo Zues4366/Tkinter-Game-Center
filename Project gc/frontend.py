@@ -7,13 +7,15 @@ root=Tk()
 root.geometry("500x500")
 root.title("GAME CENTER")
 
+# Calls upon a script in backend for tic-tac-toe
 def call_tic():
     backend.spwindow()
 
+# Calls upon a script in backend for rock, paper, scissors
 def call_rps():
     backend.rps()
 
-
+# A simple Grid for the games currently on it
 main_frame=Frame(root)
 Label(main_frame, text="Games", font=BOLD, fg='blue').grid(row=1, column=1)
 Button(main_frame, text="Tic-Tac-Toe", command=(call_tic)).grid(row=2, column=1)
