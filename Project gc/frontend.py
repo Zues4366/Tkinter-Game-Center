@@ -5,6 +5,7 @@ import backend
 
 root=Tk()
 root.geometry("500x500")
+root.title("GAME CENTER")
 
 def call_tic():
     backend.spwindow()
